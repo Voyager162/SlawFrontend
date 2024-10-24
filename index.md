@@ -1,7 +1,6 @@
 ---
 layout: post
-title: My Space 
-description: My Interests
+title: Home
 hide: true
 menu: nav/home.html
 ---

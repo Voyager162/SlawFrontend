@@ -1,14 +1,78 @@
-<table>
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-family: 'Poppins', sans-serif; /* Softer, thicker font */
+      background-color: #f5f5f5; /* Light background */
+      border: 3px solid #ccc; /* Thicker border around table */
+      border-radius: 12px;
+    }
+  
+    td {
+      padding: 15px 25px;
+      text-align: center;
+      border: 2px solid #ccc; /* Thicker borders for cells */
+    }
+  
+    td img {
+      vertical-align: middle;
+    }
+  
+    td a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px; /* Thicker text */
+      font-weight: 500; /* Slightly bolder */
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+  
+    td a:hover {
+      color: #ffffff;
+      background-color: #007bff; /* Subtle background change on hover */
+      padding: 10px 15px; /* Adds a button-like feel on hover */
+      border-radius: 6px; /* Rounded edges for hover effect */
+    }
+  
+    #loginArea a {
+      font-weight: bold;
+      color: #ff4500;
+    }
+  
+    #loginArea a:hover {
+      background-color: #ff6347;
+      color: #ffffff;
+    }
+  
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      td {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+      }
+      
+      td a {
+        display: block;
+        padding: 15px;
+        background-color: #e8e8e8;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+  
+  <table>
     <tr>
-        <td><img src="{{site.baseurl}}/images/logo.png" height="60" title="Home" alt=""></td>
-        <td><a href="{{site.baseurl}}/academics/math">Integrated</a></td>
-        <td><a href="{{site.baseurl}}/academics/english">APEL</a></td>
-        <td><a href="{{site.baseurl}}/electives/band">Orchestra</a></td>
-        <td><a href="{{site.baseurl}}/electives/compsci">CompSci</a></td>
-        <td><a href="{{site.baseurl}}/hangouts/community">Panera</a></td>
-        <td id="loginArea"><a href="{{site.baseurl}}/login">Profile</a></td>
+      <td><img src="{{site.baseurl}}/images/carIcon.png" height="60" title="Home" alt="Home Icon"></td>
+      <td><a href="{{site.baseurl}}/luxCars">Luxury Cars</a></td>
+      <td><a href="{{site.baseurl}}/ecoCars">Economy Cars</a></td>
+      <td><a href="{{site.baseurl}}/vinCars">Vintage Cars</a></td>
+      <td><a href="{{site.baseurl}}/trucks">Trucks</a></td>
+      <td id="loginArea"><a href="{{site.baseurl}}/login">Profile</a></td>
     </tr>
-</table>
+  </table>
+  
 
 <script type="module">
     import { pythonURI, fetchOptions } from '{{site.baseurl}}/assets/js/api/config.js';
